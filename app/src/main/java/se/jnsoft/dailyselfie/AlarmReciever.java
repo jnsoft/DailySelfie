@@ -7,14 +7,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-/**
- * Created by johann on 2015-10-04.
- */
+
 public class AlarmReciever extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Intent selfieIntent = new Intent(context, Selfie.class);
+        Intent selfieIntent = new Intent(context, MainActivity.class);
         selfieIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, selfieIntent, 0);
 
@@ -31,5 +29,6 @@ public class AlarmReciever extends BroadcastReceiver {
         /// remove notification after selection
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
         notificationManager.notify(0, notification);
+
     }
 }

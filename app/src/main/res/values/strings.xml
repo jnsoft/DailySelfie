@@ -9,7 +9,7 @@
     <string name="menu_clearAll">Clear all</string>
 
     <string name="dialog_delete">Are you sure you want to delete the selected selfie?</string>
-    <string name="dialog_clear_all">Are you sure you want to delete all taken selfies?</string>
+    <string name="dialog_clear_all">Are you sure you want to delete all selfies?</string>
     <string name="dialog_yes">Yes</string>
     <string name="dialog_no">No</string>
 
