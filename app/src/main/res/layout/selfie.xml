@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="74dip"
+    android:paddingLeft="15dip"
+    android:paddingTop ="5dip"
+    android:paddingBottom ="5dip">
+
+    <ImageView android:id="@+id/selfie_pic_image_view"
+        android:layout_width="@dimen/selfie_pic_width"
+        android:layout_height="@dimen/selfie_pic_height"/>
+    <TextView android:id="@+id/selfie_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/selfie_text_height"
+        android:layout_marginLeft="15dip"
+        android:textSize="20sp"
+        android:gravity="center_vertical"/>
+</LinearLayout>
